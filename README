@@ -1,0 +1,19 @@
+HOW TO RUN
+1. shmem_* : server and client processes will be share same memory area that can be writable and readable from both sides. 
+ - Run 'shmem_server' first then run 'shmem_client' in another shell.
+ - In 'shmem_server' side, write the message that you want to pass to 'shmem_client'.
+ - Check the result of 'shmem_client' side.
+
+2. mq_* : client process will be insert message into message queue and server will be print and pop out top of the queue.
+ - Run 'mq_client' several times and run 'mq_server' to print out and pop out the top of message queue
+ - If message queue is empty, 'mq_server' will print out message that 'empty queue'.
+   ex) If you run 'mq_client' 3 times, 'mq_server' can print and pot out 3 times. 
+
+3. sh_st_* : server and client share same int[] struct(number of array will be 256) via share memory. server can insert 'number' into 'index' array of shared int[] struct.    
+ - Run 'sh_st_server' first then run 'sh_st_server'.
+ - In 'sh_st_server' side, write 'number' and 'index' and check the result in 'sh_st_client' side.
+
+4. mq_st_* : client send custom structure in message queue form to server.
+ - Run 'mq_st_client' several times and run 'mq_st_server' to print and pop out the top of message queue
+ - If message queue is empty, 'mq_st_server' will print out message that 'empty queue'.
+   ex) If you run 'mq_st_client' 3 times, 'mq_st_server' can print and pot out 3 times. 
