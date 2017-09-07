@@ -1,4 +1,4 @@
-HOW TO RUN
+HOW TO RUN this program
 1. shmem_* : server and client processes will be share same memory area that can be writable and readable from both sides. 
  - Run 'shmem_server' first then run 'shmem_client' in another shell.
  - In 'shmem_server' side, write the message that you want to pass to 'shmem_client'.
