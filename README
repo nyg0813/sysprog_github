@@ -1,6 +1,21 @@
 HELLO WORLD
-
 TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+TODAY:09/08 
+
 
 HOW TO RUN
 1. shmem_* : server and client processes will be share same memory area that can be writable and readable from both sides. 
