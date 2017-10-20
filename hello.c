@@ -4,6 +4,13 @@
 #include <sys/wait.h>
 #include <errno.h>
 
+int make_happy(int happy)
+{
+	printf("print Happy! %d\n", happy);
+	return 1;
+}
+
+
 int main(int argc, char *argv[])
 {
 	pid_t pid;
