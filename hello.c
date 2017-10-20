@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 		
 	}
 
-	if (waitpid(pid, NULL, 0) < 0)
-		fprintf(stderr, "wait error\n");
+//	if (waitpid(pid, NULL, 0) < 0)
+//		fprintf(stderr, "wait error\n");
 
 	if ((pid = fork()) < 0) {
 		fprintf(stderr, "fork error\n");
 	} else if (pid == 0) {  /* specify filename, inherit environment */
-		system("/bin/ls -a"); 
+//		system("/bin/ls -a"); 
 		printf("I’m Child PID = %d, Parent PID =%d\n", getpid(), getppid());	
 	}
 	exit(0); 
